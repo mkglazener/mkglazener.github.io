@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -23,7 +23,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-  
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mkgport</title>
@@ -38,7 +38,7 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" type="text/css" href="style.css" title="Default Styles" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- jQuery Easing -->
@@ -59,84 +59,66 @@
         margin: auto;
       }
     </style>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
   </head>
 
 
+  <!-- MAIN JS -->
+  <script src="js/main.js"></script>
+
+</head>
+
 <body>
-  <!--Navigation bar-->
-<div id="nav-placeholder">
-
-  </div>
-  
-  <script>
-  $(function(){
-    $("#nav-placeholder").load("nav.html");
-  });
-  </script>
-  <!--end of Navigation bar-->
-
-  <!-- jQuery & Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-
-  <!-- Custom JS -->
-  <script src="/app.js"></script>
-  <!-- Custom styles for this template -->
-  <link href="carousel.css" rel="stylesheet">
-
-
-  <!-- NAVBAR================================================== -->
+  <app-root></app-root>
   <div id="background"></div>
-  <meta charset="utf-8">
+  <body>
+    <div id="background"></div>
+
+    <!-- NAV STARTS -->
+
+    <div id="mkg">
+      <aside id="aside" role="complementary" class="border js-fullheight">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light aside">
+          <a class="navbar-brand" href="#">
+            <span style="color:maroon">M</span>
+            <span>G</span>
+            <span style="color:maroon">K</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="navbar-nav aside">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">MKG</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">A Day in the Life</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+
+          </ul>
+
+          <div class="collapse navbar-collapse aside" id="MKG">
+          </div>
+        </nav>
+      </aside>
+    </div>
+
   
-  <br>
-
-
-  <div id="mkg">
-    <aside id="aside" role="complementary" class="border js-fullheight">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light aside">
-        <a class="navbar-brand" href="#">
-          <span style="color:maroon">M</span>
-          <span>G</span>
-          <span style="color:maroon">K</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="navbar-nav aside">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home
-              <span class="sr-only">MKG</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="work.html">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#C4">A Day in the Life</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-
-
-        </ul>
-
-        <div class="collapse navbar-collapse aside" id="MKG">
-        </div>
-      </nav>
-    </aside>
-    
   </div>
   <!-- NAV ENDS -->
-  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -409,13 +391,13 @@
               </div>
 
 </body>
- <!-- A DAY IN THE LIFE -->
+
 <div class="WhatIdo">
   <div class="whatservices">
     <hr class="featurette-divider">
     <div class="row">
       <div class="col-md-10 col-md-offset-3 col-md-pull-3">
-        <h2 id="C4"><h2 class="featurette-heading">A DAY IN THE LIFE.
+        <h2 class="featurette-heading">A DAY IN THE LIFE.
           <span class="text-muted">It'll blow your mind.</span>
         </h2>
         <span class="heading-meta">See at me</span>
@@ -528,13 +510,14 @@
 
   <hr class="featurette-divider">
 
- 
+  <!-- A DAY IN THE LIFE -->
 
 </div>
 </div>
 
 </div>
 </div>
+ssa
 
 
 
@@ -595,7 +578,6 @@
 
 
 <div class="row">
-    All Rights Reserved: Mary Katherine Glazener 2018
 </div>
 
 </body>
